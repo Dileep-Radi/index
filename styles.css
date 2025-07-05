@@ -1,0 +1,204 @@
+
+    :root {
+      --bg-color: #0d1b2a;
+      --text-color: #ffffff;
+      --card-bg: #1b263b;
+      --bar-bg: #415a77;
+      --fill-color: #00b4d8;
+      --primary: #0077b6;
+      --accent: #00b4d8;
+      --link-hover: #90e0ef;
+    }
+
+    body.light {
+      --bg-color: #f0f8ff;
+      --text-color: #001f3f;
+      --card-bg: #e0f7fa;
+      --bar-bg: #cce5ff;
+      --fill-color: #0077b6;
+      --primary: #0077b6;
+      --accent: #48cae4;
+      --link-hover: #0077b6;
+    }
+
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      scroll-behavior: smooth;
+      transition: background 0.4s, color 0.4s;
+    }
+
+    nav {
+      background: var(--card-bg);
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: var(--text-color);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--link-hover);
+    }
+
+    .toggle-btn {
+      background: var(--primary);
+      color: #fff;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    #hero {
+      background: linear-gradient(to right, var(--primary), var(--accent));
+      color: white;
+      padding: 100px 20px;
+    }
+
+    .hero-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      text-align: left;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 180px;
+    }
+
+    .hero-image {
+      flex: 1;
+      min-width: 120px;
+      text-align: center;
+    }
+
+    .hero-image img {
+      width: 230px;
+      height: 200px;
+      border-radius: 200px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+      margin-top: 20px;
+    }
+
+    .btn {
+      background: var(--primary);
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s ease;
+      margin-top: 20px;
+      background-color: #001f3f;
+    }
+
+    .btn:hover {
+      background: var(--accent);
+      transform: scale(1.05);
+    }
+
+    .btn a{
+      color: antiquewhite;
+      text-decoration: none;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 30px;
+      text-align: left;
+    }
+
+    .skills-grid div {
+      background: var(--card-bg);
+      padding: 10px 15px;
+      border-left: 4px solid var(--fill-color);
+      border-radius: 5px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: var(--card-bg);
+      padding: 20px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+    }
+
+    .project-card a{
+      color: #0077b6;
+      text-decoration: none;
+      margin-top: 100px;
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+      text-align: left;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      background: var(--bg-color);
+      color: var(--text-color);
+      border: 1px solid var(--bar-bg);
+      border-radius: 5px;
+    }
+
+    input:focus, textarea:focus {
+      border-color: var(--accent);
+      outline: none;
+    }
+
+    footer {
+      background: var(--card-bg);
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+    }
+  
